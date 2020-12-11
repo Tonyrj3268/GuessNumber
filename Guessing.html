@@ -1,0 +1,28 @@
+
+<script type="text/javascript">
+	function guess(s){
+		window.prompt(s);
+	} 
+	function result(x,y){
+		if(x!=y){
+			
+		}
+		else{
+			alert("Guess correctly.");
+
+		}
+	}
+	var input1 = guess("Please enter a number between 1-10");
+	var value1=parseInt(input1);
+	var correctNum=Math.floor(Math.random()*10+1);
+
+	while(value1!=correctNum){
+        result(value1,correctNum);
+		value1=window.prompt("Guess incorrectly.\nPlease enter another number.");
+        
+	}
+	result(value1,correctNum);
+
+
+
+</script>
